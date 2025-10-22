@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 
 app = Flask(__name__)
@@ -7,6 +7,7 @@ app = Flask(__name__)
 # 各URLに応じた関数(アプリパスの定義)
 @app.route('/')
 def index():
+
 	return """
             <html>
             <head>
@@ -34,6 +35,9 @@ def ryosei():
             </html>
 			"""
 
+@app.route('/diary')
+def diary():
+	return render_template("diary.html")
 
 #アプリ実行
 if __name__ == "__main__":
