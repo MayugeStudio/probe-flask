@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>サブサイト</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}"/>
+    <style>
+p {
+  font-size: 20px;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>PY12-02-Flaskで画面遷移</h1>
+      <p>IT11A-10-河原諒晟</p>
+    </header>
+    <div id="wrapper">
+      <h2>自己紹介</h2><br>
+      <p>私の名前は{{name}}です！</p>
+      <br>
+      <input type="button" onclick="history.back()" value="戻る">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>トップページ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}"/>
+    <style>
+ul {}
+li {
+  margin: 50px;
+}
+a {
+  color: white;
+  padding: 15px 40px;
+  border-radius: 15px;
+  background-color: skyblue;
+}
+a:hover {
+  color: skyblue;
+  background-color: white;  
+  border: 3px solid skyblue;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>PY12-02-Flaskで画面遷移</h1>
+      <p>IT11A-10-河原諒晟</p>
+    </header>
+    <div id="wrapper">
+      <section>
+        <h2>各ページへのリンクリスト</h2>
+        <ul>
+          <li><a href='/hello'>挨拶</a></li>
+          <li><a href='/tmp_sample2/KawaharaRyosei'>Kawahara</a></li>
+          <li><a href='/tmp_sample2/ShiozawaKazuki'>Shiozawa</a></li>
+          <li><a href='/tmp_sample2/TakahashiMasahiro'>Takahashi</a></li>
+          <li><a href='/tmp_sample2/MiwaNaoki'>Miwa</a></li>
+          <li><a href='/method_sample'>Form Submit</a></li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

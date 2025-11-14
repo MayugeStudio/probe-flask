@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>GETとPOSTの切り分け</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}"/>
+</head>
+<body>
+  <header>
+    <h1>PY12-02-Flaskで画面遷移</h1>
+    <p>IT11A-10-河原諒晟</p>
+  </header>
+  <div id="wrapper">
+    <section>
+      <h2>名前を入力してください</h2>
+      <form method="POST" action="/method_sample2">
+        <div>
+          <label for="name">名前</label>
+          <p><input type="text" id="name" name="namep" required></p>
+          <p><button type="submit">POST送信</button></p>
+        </div>
+      </form>
+    </section>
+    <section>
+      <h2>名前を入力してください</h2>
+      <form method="GET" action="/method_sample2">
+        <div>
+          <label for="name">名前</label>
+          <p><input type="text" id="name" name="nameg" required></p>
+          <p><button type="submit">GET送信</button></p>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
+
